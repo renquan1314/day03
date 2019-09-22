@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/re_image"
+        android:scaleType="fitXY" />
+
+
+    <LinearLayout
+        android:layout_marginLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="vertical">
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:id="@+id/re_tv1"
+                android:textSize="20sp"
+                />
+
+            <Button
+                android:layout_width="60dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="100dp"
+                android:background="@drawable/shape"
+                android:text="关注"/>
+            
+        </LinearLayout>
+
+        <TextView
+            android:textColor="#33000000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:text="2"
+            android:id="@+id/re_tv2"/>
+
+        <TextView
+            android:textColor="#33000000"
+            android:text="3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/re_tv3"/>
+        
+    </LinearLayout>
+
+</LinearLayout>
