@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <q.rorbin.verticaltablayout.VerticalTabLayout
+        android:id="@+id/mtab"
+        android:layout_width="100dp"
+        app:indicator_gravity="fill"
+        android:layout_height="match_parent"
+        app:tab_height="@dimen/dp_50"
+        android:background="@color/huise"
+        app:indicator_color="@color/white"
+        app:tab_mode="scrollable"
+        />
+
+    <com.example.ren.wanandroid.app.VerticalViewPager
+        android:background="@color/white"
+        android:id="@+id/viewpager_lead"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </com.example.ren.wanandroid.app.VerticalViewPager>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/dp_50"
+        android:id="@+id/float_btn"
+        android:src="@mipmap/icon_up_arrow"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:scaleType="fitXY"
+        />
+
+
+
+</RelativeLayout>

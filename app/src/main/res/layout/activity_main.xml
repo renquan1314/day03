@@ -1,34 +1,59 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:id="@+id/drawer"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context="com.example.ren.day03zuo1.MainActivity">
+    tools:context="com.example.ren.wanandroid.app.MainActivity">
 
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/rel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/appbar"
+            android:fitsSystemWindows="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
     <android.support.v7.widget.Toolbar
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
         android:minHeight="?attr/actionBarSize"
-        android:background="@android:color/black">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="列表"
-            android:textSize="20sp"
-            android:textColor="@android:color/white"
-            android:layout_marginLeft="150dp"/>
-
-    </android.support.v7.widget.Toolbar>
-
-
-    <android.support.v7.widget.RecyclerView
+        android:background="@color/toolbar_color1"
         android:layout_width="match_parent"
+        app:layout_scrollFlags="scroll|snap"
         android:layout_height="wrap_content"
-        android:id="@+id/recycler">
-    </android.support.v7.widget.RecyclerView>
+        android:id="@+id/toolbar" >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="首页"
+            android:layout_marginLeft="35dp"
+            android:id="@+id/toolbar_tv"
+            android:textSize="20sp"
+            android:textColor="#ffffff"/>
+    </android.support.v7.widget.Toolbar>
+        </android.support.design.widget.AppBarLayout>
 
+    <FrameLayout
+        android:layout_below="@id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/frame"></FrameLayout>
+    </RelativeLayout>
+    </android.support.design.widget.CoordinatorLayout>
 
-</LinearLayout>
+    <android.support.design.widget.NavigationView
+        android:layout_width="match_parent"
+        app:itemBackground="@drawable/menu_select"
+        android:layout_height="match_parent"
+        android:id="@+id/nav"
+        app:menu="@menu/nav_menu"
+        android:layout_gravity="left"
+        app:headerLayout="@layout/layout_nav_head">
+    </android.support.design.widget.NavigationView>
+
+</android.support.v4.widget.DrawerLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.notice.liangxq.lifecycle.MainActivity">
+
+    <RadioGroup
+        android:id="@+id/tabGroup"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:layout_alignParentBottom="true"
+        android:background="#000000"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/tab_home"
+            style="@style/tab_style"
+            android:drawableTop="@drawable/tab_home_select"
+            android:text="首页"
+            android:checked="true"
+            android:textColor="@drawable/color_selector" />
+        <RadioButton
+            android:id="@+id/tab_more"
+            style="@style/tab_style"
+            android:drawableTop="@drawable/tab_more_select"
+            android:text="活多多"
+            android:textColor="@drawable/color_selector" />
+
+        <RadioButton
+            android:id="@+id/tab_discover"
+            style="@style/tab_style"
+            android:drawableTop="@drawable/tab_discover_select"
+            android:text="发现"
+            android:textColor="@drawable/color_selector" />
+
+        <RadioButton
+            android:id="@+id/tab_mine"
+            style="@style/tab_style"
+            android:drawableTop="@drawable/tab_mine_select"
+            android:text="我的"
+            android:textColor="@drawable/color_selector" />
+    </RadioGroup>
+
+    <FrameLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/tabGroup" />
+</RelativeLayout>

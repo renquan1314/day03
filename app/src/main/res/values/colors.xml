@@ -3,4 +3,17 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+    <color name="huise">#33000000</color>
+    <color name="white">#ffffff</color>
+    <color name="comment_line">#dddddd</color>
+    <color name="colorCard">#FFFFFF</color>
+    <color name="light_red">#e26d2e</color>
+    <color name="grey">#cccccc</color>
+    <color name="toolbar_color">#00B9F3</color>
+    <color name="tencent_color">#AAE3FF</color>
+    <color name="sousuo">#DD4422</color>
+    <color name="toolbar_color1">#00A1F2</color>
+    <color name="colorReg">#2E3D59</color>
+    <color name="delat_color">#009EF2</color>
+    <color name="delat_color_2">#00ABFF</color>
 </resources>

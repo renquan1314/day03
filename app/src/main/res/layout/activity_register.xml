@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@color/colorReg"
+    tools:context="com.example.ren.wanandroid.app.RegisterActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:background="@color/colorReg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="注册"
+            android:gravity="center"
+            android:textSize="25sp"
+            android:textColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </android.support.v7.widget.Toolbar>
+    <LinearLayout
+        android:layout_margin="50dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/register_call"
+            android:padding="15dp"
+            android:drawableLeft="@drawable/r1"
+            android:hint="   邮箱/手机号"
+            android:layout_width="250dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/regshape"
+            android:layout_height="50dp" />
+        <EditText
+            android:id="@+id/register_word1"
+            android:padding="15dp"
+            android:drawableLeft="@drawable/r2"
+            android:hint="   输入密码"
+            android:layout_width="250dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/regshape"
+            android:layout_height="50dp" />
+        <EditText
+            android:id="@+id/register_word2"
+            android:padding="15dp"
+            android:drawableLeft="@drawable/r2"
+            android:hint="   确认密码"
+            android:layout_width="250dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/regshape"
+            android:layout_height="50dp" />
+        <Button
+            android:id="@+id/zhuce"
+            android:text="注册"
+            android:background="@drawable/regbuttonshape"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="50dp"
+            android:layout_width="260dp"
+            android:layout_height="50dp" />
+    </LinearLayout>
+
+
+</LinearLayout>
